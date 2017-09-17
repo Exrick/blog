@@ -24,31 +24,25 @@
     
     <entry>
       <title></title>
-      <url>/blog/gallery/gallery.json</url>
-      <content type="html"><![CDATA[{"s1":{"full_link":"http://oweupqzdv.bkt.clouddn.com/1-1F91F91G8.jpg","thumb_link":"http://oweupqzdv.bkt.clouddn.com/1-1F91F91G8.jpg","descr":"scenery"},"s2":{"full_link":"http://oweupqzdv.bkt.clouddn.com/1-1F91F91H0.jpg","thumb_link":"http://oweupqzdv.bkt.clouddn.com/1-1F91F91H0.jpg","descr":"scenery"}}]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[映像]]></title>
-      <url>/blog/gallery/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[标签云]]></title>
-      <url>/blog/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title></title>
       <url>/blog/about/index.html</url>
       <content type="html"><![CDATA[<p>hello</p>
 ]]></content>
     </entry>
     
     <entry>
-      <title><![CDATA[时间轴]]></title>
+      <title><![CDATA[gallery]]></title>
+      <url>/blog/gallery/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[tags]]></title>
+      <url>/blog/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[timeline]]></title>
       <url>/blog/timeline/index.html</url>
       <content type="html"></content>
     </entry>
