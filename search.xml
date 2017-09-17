@@ -16,24 +16,23 @@
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 ]]></content>
       
+        <categories>
+            
+            <category> Tech </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Tech </tag>
+            
+        </tags>
         
     </entry>
     
   
   
-    
-    <entry>
-      <title></title>
-      <url>/blog/about/index.html</url>
-      <content type="html"><![CDATA[<p>hello</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[gallery]]></title>
-      <url>/blog/gallery/index.html</url>
-      <content type="html"></content>
-    </entry>
     
     <entry>
       <title><![CDATA[tags]]></title>
@@ -42,8 +41,56 @@
     </entry>
     
     <entry>
+      <title><![CDATA[About Me]]></title>
+      <url>/blog/about/index.html</url>
+      <content type="html"><![CDATA[<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>Exrick</p>
+<p>小黄鱼 也可以作为昵称</p>
+<p>喜欢宅，不善主动交际</p>
+<p>喜欢尝试新事物，对小众的东西也有特别的兴趣</p>
+<p>还有视频特效制作技能</p>
+<p>没有代码和音乐，我可能活不下去</p>
+<p>使用电脑时，后台必定运行着网易云音乐</p>
+<h2 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h2><p><strong>主页:</strong> exrick.cn</p>
+<p><strong>Mail:</strong> 1012139570@qq.com</p>
+<blockquote>
+<p>优先级最高的 IM 工具</p>
+</blockquote>
+<p><strong>GitHub:</strong> Exrick</p>
+<p><strong>Facebook:</strong> Exrick</p>
+<p><strong>微博:</strong> Exrick</p>
+<p><strong>网易云音乐:</strong> Exrick</p>
+<p><strong>Bilibili:</strong> Exrick</p>
+<p><strong>QQ:</strong> 1012139570</p>
+<p><strong>WeChat:</strong> Exrick</p>
+<p><strong>Location:</strong> 中国成都</p>
+<h2 id="友链申请"><a href="#友链申请" class="headerlink" title="友链申请"></a>友链申请</h2><blockquote>
+<p>在本页下方评论申请即可</p>
+</blockquote>
+<h4 id="基本的要求"><a href="#基本的要求" class="headerlink" title="基本的要求"></a>基本的要求</h4><ul>
+<li>在您申请友情链接之前请先添加本站友链</li>
+<li>包括以原创、技术向 为主的有关内容</li>
+<li>站点已平稳运行超过 30 天</li>
+</ul>
+<h4 id="友链格式"><a href="#友链格式" class="headerlink" title="友链格式"></a>友链格式</h4><blockquote>
+<ul>
+<li>昵称 / 站点名称</li>
+<li>网站链接</li>
+<li>介绍</li>
+<li>Icon / 头像</li>
+</ul>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[timeline]]></title>
       <url>/blog/timeline/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[gallery]]></title>
+      <url>/blog/gallery/index.html</url>
       <content type="html"></content>
     </entry>
     
