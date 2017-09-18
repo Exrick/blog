@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>/blog/2017/09/17/hello-world/</url>
+      <url>/2017/09/17/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -36,13 +36,13 @@
     
     <entry>
       <title><![CDATA[tags]]></title>
-      <url>/blog/tags/index.html</url>
+      <url>/tags/index.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
       <title><![CDATA[About Me]]></title>
-      <url>/blog/about/index.html</url>
+      <url>/about/index.html</url>
       <content type="html"><![CDATA[<h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>Exrick</p>
 <p>小黄鱼 也可以作为昵称</p>
 <p>喜欢宅，不善主动交际</p>
@@ -84,13 +84,13 @@
     
     <entry>
       <title><![CDATA[timeline]]></title>
-      <url>/blog/timeline/index.html</url>
+      <url>/timeline/index.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
       <title><![CDATA[gallery]]></title>
-      <url>/blog/gallery/index.html</url>
+      <url>/gallery/index.html</url>
       <content type="html"></content>
     </entry>
     
