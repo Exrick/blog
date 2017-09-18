@@ -3,17 +3,59 @@
   
     
     <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>/2017/09/17/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+      <title><![CDATA[Hello Hexo]]></title>
+      <url>/2017/09/17/hello-hexo/</url>
+      <content type="html"><![CDATA[<p>Hexo+Github+域名绑定+Material Theme 快速搭建个人博客.<br>整个搭建过程还是算比较简单的，按照官方文档一步一步来，绑定域名时遇到了一些小坑以下为大概步骤记录:</p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><ul>
+<li>Node.js 环境</li>
+<li>Git 环境</li>
+<li>GitHub 注册和配置</li>
+<li>Hexo 安装配置</li>
+<li>关联 Hexo 与 GitHub Pages</li>
+<li>GitHub Pages 地址解析到个人域名</li>
+<li>Material Theme 主题配置</li>
+<li>Hexo 的常用操作</li>
+</ul>
+<h2 id="Hexo-安装配置"><a href="#Hexo-安装配置" class="headerlink" title="Hexo 安装配置"></a>Hexo 安装配置</h2><ul>
+<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官方文档</a></li>
+</ul>
+<h2 id="关联-GitHub-Pages"><a href="#关联-GitHub-Pages" class="headerlink" title="关联 GitHub Pages"></a>关联 GitHub Pages</h2><ul>
+<li>新建Github仓库，例如我的 <a href="https://github.com/Exrick/blog" target="_blank" rel="external">blog</a></li>
+<li>在该仓库中新建一个文件如README，然后在仓库设置settings中找到GitHub Pages，选择master分支后保存<br>  <img src="http://oweupqzdv.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170918223505.png" alt=""></li>
+<li>在Hexo配置文件中关联你的Github项目，注意此时未绑定域名时的配置，否则会造成样式丢失或404，例如:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">url: https://exrick.github.io/blog</div><div class="line">root: /blog/</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/Exrick/blog.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<h2 id="GitHub-Pages-地址解析到个人域名"><a href="#GitHub-Pages-地址解析到个人域名" class="headerlink" title="GitHub Pages 地址解析到个人域名"></a>GitHub Pages 地址解析到个人域名</h2><ul>
+<li>购买域名后进入域名解析设置，本人以腾讯云为例:<br>  <img src="http://oweupqzdv.bkt.clouddn.com/QQ%E6%88%AA%E5%9B%BE20170918225022.png" alt=""></li>
+<li>注意此时绑定域名后Hexo的配置，否则会造成样式丢失或404，例如:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">url: http://blog.exrick.cn</div><div class="line">root: /</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Material-Theme-主题配置"><a href="#Material-Theme-主题配置" class="headerlink" title="Material Theme 主题配置"></a>Material Theme 主题配置</h2><ul>
+<li>个人很喜欢的原生主题 <a href="https://viosey.com/" target="_blank" rel="external">viosey大神作品</a></li>
+<li><a href="https://material.viosey.com/" target="_blank" rel="external">Material Theme官方文档</a></li>
+</ul>
+<h2 id="Hexo-的常用操作"><a href="#Hexo-的常用操作" class="headerlink" title="Hexo 的常用操作"></a>Hexo 的常用操作</h2><ul>
+<li>创建新文章</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<ul>
+<li>运行本地服务器查看</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<ul>
+<li>生成静态文件</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<ul>
+<li>部署到远程</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<ul>
+<li>常用组合命令</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo d -g</div></pre></td></tr></table></figure>
+<p>更多命令: <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">中文官方文档</a></p>
 ]]></content>
       
         <categories>
@@ -50,17 +92,17 @@
 <p>还有视频特效制作技能</p>
 <p>没有代码和音乐，我可能活不下去</p>
 <p>使用电脑时，后台必定运行着网易云音乐</p>
-<h2 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h2><p><strong>主页:</strong> exrick.cn</p>
-<p><strong>Mail:</strong> 1012139570@qq.com</p>
+<h2 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h2><p><strong>主页:</strong> <a href="http://www.exrick.cn" target="_blank" rel="external">exrick.cn</a></p>
+<p><strong>Mail:</strong> <a href="mailto:1012139570@qq.com" target="_blank" rel="external">1012139570@qq.com</a></p>
 <blockquote>
 <p>优先级最高的 IM 工具</p>
 </blockquote>
-<p><strong>GitHub:</strong> Exrick</p>
-<p><strong>Facebook:</strong> Exrick</p>
-<p><strong>微博:</strong> Exrick</p>
-<p><strong>网易云音乐:</strong> Exrick</p>
-<p><strong>Bilibili:</strong> Exrick</p>
-<p><strong>QQ:</strong> 1012139570</p>
+<p><strong>GitHub:</strong> <a href="https://github.com/Exrick" target="_blank" rel="external">Exrick</a></p>
+<p><strong>Facebook:</strong> <a href="https://www.facebook.com/exrick xiao" target="_blank" rel="external">Exrick Xiao</a></p>
+<p><strong>微博:</strong> <a href="https://weibo.com/2255094222/" target="_blank" rel="external">Exrick</a></p>
+<p><strong>网易云音乐:</strong> <a href="http://music.163.com/#/user/home?id=51835343" target="_blank" rel="external">Exrick</a></p>
+<p><strong>Bilibili:</strong> <a href="https://space.bilibili.com/22701144/#!/" target="_blank" rel="external">Exrick</a></p>
+<p><strong>QQ:</strong> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1012139570&amp;site=qq&amp;menu=yes" target="_blank" rel="external">1012139570</a></p>
 <p><strong>WeChat:</strong> Exrick</p>
 <p><strong>Location:</strong> 中国成都</p>
 <h2 id="友链申请"><a href="#友链申请" class="headerlink" title="友链申请"></a>友链申请</h2><blockquote>
